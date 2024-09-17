@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo de la cabecera */
+        .header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            letter-spacing: 2px;
+        }
+
+        .header img {
+            position: absolute;
+            left: 20px; /* Mantiene la imagen en la esquina */
+            width: 50px;
+            height: 50px;
+        }
+
+        .header span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Estilo del menú de navegación */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #d32f2f;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            padding: 10px 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            background-color: #b71c1c;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 16px;
+            width: 12%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a:hover {
+            background-color: #ff5252;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Ajuste de las imágenes para que sean más compactas */
+        .menu-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            padding: 5px;
+        }
+
+        .menu-item span {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            nav a {
+                width: 40%;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="img/al-dia.jpg" alt="Logo">
+    <span>Bienvenidos</span>
+</div>
+
+<nav>
+    <a href="Clientes.html" class="menu-item">
+        <img src="img/clientes.png" alt="Clientes">
+        <span>Clientes</span>
+    </a>
+    <a href="Ventas.html" class="menu-item">
+        <img src="img/ventas.png" alt="Ventas">
+        <span>Ventas</span>
+    </a>
+    <a href="Produccion.html" class="menu-item">
+        <img src="img/produccion.png" alt="Producción">
+        <span>Producción</span>
+    </a>
+    <a href="Compras.html" class="menu-item">
+        <img src="img/compras.png" alt="Compras">
+        <span>Compras</span>
+    </a>
+    <a href="Costos.html" class="menu-item">
+        <img src="img/icons8-bolsa-de-dinero-48.png" alt="Costos">
+        <span>Costos</span>
+    </a>
+    <a href="Almacen.html" class="menu-item">
+        <img src="img/almacen.png" alt="Almacén">
+        <span>Almacén</span>
+    </a>
+    <a href="Reportes.html" class="menu-item">
+        <img src="img/reportes.png" alt="Reportes">
+        <span>Reportes</span>
+    </a>
+</nav>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

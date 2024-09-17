@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Para permitir el posicionamiento de la imagen */
+        }
+        .form-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px; /* Aumenté el ancho */
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Alineación en la parte superior */
+            position: relative; /* Para posicionar la imagen dentro del contenedor */
+        }
+        .form-title {
+            text-align: left;
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .form-fields {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+            margin-right: 40px; /* Aumenta la distancia entre los campos y los botones */
+        }
+        .form-fields label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .form-fields input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 50px; /* Agregue un margen superior para separar los botones de la imagen */
+        }
+        .form-buttons button {
+            padding: 12px;
+            margin-bottom: 20px; /* Aumente el espacio entre botones */
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            min-width: 120px; /* Para hacer los botones más grandes */
+        }
+        .form-buttons .register-btn {
+            background-color: #dc3545; /* Rojo */
+        }
+        .form-buttons .cancel-btn {
+            background-color: #007bff; /* Azul */
+        }
+        .form-buttons button:hover {
+            opacity: 0.9;
+        }
+        /* Imagen en la esquina superior derecha */
+        .top-right-image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <!-- Imagen en la esquina superior derecha -->
+        <img src="img/al-dia.jpg" alt="Logo" class="top-right-image">
+
+        <!-- Campos y título del lado izquierdo -->
+        <div class="form-fields">
+            <div class="form-title">Registrar Usuarios</div>
+            <label for="employee">Empleado</label>
+            <input type="text" id="employee" name="employee" placeholder="Nombre del empleado" required>
+
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" placeholder="Ingresa el usuario" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa la contraseña" required>
+        </div>
+
+        <!-- Botones del lado derecho -->
+        <div class="form-buttons">
+            <button type="button" class="register-btn">Registrar</button>
+            <button type="button" class="cancel-btn">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
